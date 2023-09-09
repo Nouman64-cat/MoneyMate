@@ -1,13 +1,27 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+@import url('https://fonts.googleapis.com/css2?family=ABeeZee&family=Lato&family=Lora&family=Poppins:wght@200&display=swap');
+
+@layer base{
+  h1{
+    font-family: 'ABeeZee', sans-serif;
+  }
+  h2{
+    font-family: 'Lato', sans-serif;
+  }
+}
+@layer utilities {
+  .input-filled {
+    font-family: 'ABeeZee';
+    background-color: #fff; /* Set the desired background color for filled input */
+   border: none; /* Remove the default border */
+    border-bottom: 1px solid #CFBFA6;  /* Set the desired border style and color */
+    padding: 0.5rem; /* Set the desired padding */
+    border-radius: 0.25rem; /* Set the desired border-radius */
+    background: transparent;
+    
+    letter-spacing: 0.06rem;
+  }
 }
